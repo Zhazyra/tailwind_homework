@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme:{
+                extend{
+                    backgroundImage: {
+                        'card-background': "url('./assets/pics/group41.png')"
+                    },
+                    colors: {
+                        'new-black': 'rgb(255,255,255)'
+                    }
+                }
+            }
+        }
+    </script>
+    <title>Dashboard</title>
+</head>
+
+<body>
+<div class="pl-12 pt-6 pr-12 h-auto grid grid-cols-4 bg-[#F2F8FD] gap-6 w-screen">
+<div class=" col-span-1 flex-col gap-28">
+    <img src="./assets/icons/logo.svg" alt="logo" class="w-[72px]">
+    <ul class="py-20 space-y-16">
+       <li>
+        <a href="#" class="flex gap-3.5">
+        <img src="./assets/icons/house.svg" alt="house">
+        <p>Dashboard</p>
+    </a>
+    </li>
+       <li>
+        <a href="#" class="flex gap-3.5">
+        <img src="./assets/icons/note-2.svg" alt="note">
+        <p>Note’s</p>
+    </a>
+    </li>
+    <li>
+        <a href="#" class="flex gap-3.5">
+        <img src="./assets/icons/moon.svg" alt="Theme">
+        <p>Theme</p>
+    </a>
+    </li>
+    <li>
+        <a href="#" class="flex gap-3.5">
+        <img src="./assets/icons/profile.svg" alt="Account">
+        <p>Account</p>
+    </a>
+    </li>
+    <li>
+        <a href="#" class="flex gap-3.5">
+        <img src="./assets/icons/microscope.svg" alt="Explore">
+        <p>Explore</p>
+    </a>
+    </li>
+    <li>
+        <a href="#" class="flex gap-3.5">
+        <img src="./assets/icons/graph.svg" alt="Graph">
+        <p>Graph</p>
+    </a>
+    </li>
+    <li>
+        <a href="#" class="flex gap-3.5">
+        <img src="./assets/icons/sms-edit.svg" alt="Messages">
+        <p>Messages</p>
+    </a>
+    </li>
+    <li>
+        <a href="#" class="flex gap-3.5">
+        <img src="./assets/icons/setting-2.svg" alt="Setting">
+        <p>Setting</p>
+    </a>
+    </li>
+    </ul>
+    <button class="text-black py-20 px-4 inline-flex items-center">
+        <img src="./assets/icons/logout.svg" class="w-4 h-4 mr-2" alt="logout">
+        <span>Sign Out</span>
+      </button>
+</div>
+
+<div class="col-span-2 flex flex-col gap-16">
+<div class="flex flex-row gap-3">
+<div class="flex flex-row rounded-3xl bg-[#E9F1FA] w-[600px] whitespace-nowrap">
+    <i class="w-12"><img class="w-6 h-6" src="./assets/icons/search-normal.svg" alt=""> </i>
+<input type="search" name="search" id="search" placeholder="Search for places"
+class="w-full border-none bg-transparent  px-4 py-1 text-gray-900 outline-none focus:outline-none">
+</div>
+<div>
+   <img class="absolute w-10 h-10" src="./assets/icons/Ellipse 6.svg" alt="">
+<button class="relative top-2 left-2"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <path d="M21.3 7.57999H15.72C15.33 7.57999 15.02 7.26999 15.02 6.87999C15.02 6.48999 15.33 6.17999 15.72 6.17999H21.3C21.69 6.17999 22 6.48999 22 6.87999C22 7.26999 21.69 7.57999 21.3 7.57999Z" fill="white"/>
+    <path d="M6.42 7.57999H2.7C2.31 7.57999 2 7.26999 2 6.87999C2 6.48999 2.31 6.17999 2.7 6.17999H6.42C6.81 6.17999 7.12 6.48999 7.12 6.87999C7.12 7.26999 6.8 7.57999 6.42 7.57999Z" fill="white"/>
+    <path d="M10.1399 10.83C12.3215 10.83 14.0899 9.06152 14.0899 6.87999C14.0899 4.69847 12.3215 2.92999 10.1399 2.92999C7.95842 2.92999 6.18994 4.69847 6.18994 6.87999C6.18994 9.06152 7.95842 10.83 10.1399 10.83Z" fill="white"/>
+    <path d="M21.2999 17.81H17.5799C17.1899 17.81 16.8799 17.5 16.8799 17.11C16.8799 16.72 17.1899 16.41 17.5799 16.41H21.2999C21.6899 16.41 21.9999 16.72 21.9999 17.11C21.9999 17.5 21.6899 17.81 21.2999 17.81Z" fill="white"/>
+    <path d="M8.28 17.81H2.7C2.31 17.81 2 17.5 2 17.11C2 16.72 2.31 16.41 2.7 16.41H8.28C8.67 16.41 8.98 16.72 8.98 17.11C8.98 17.5 8.66 17.81 8.28 17.81Z" fill="white"/>
+    <path d="M13.8602 21.07C16.0417 21.07 17.8102 19.3015 17.8102 17.12C17.8102 14.9385 16.0417 13.17 13.8602 13.17C11.6786 13.17 9.91016 14.9385 9.91016 17.12C9.91016 19.3015 11.6786 21.07 13.8602 21.07Z" fill="white"/>
+  </svg></button> </div>
+</div>
+<h2 class="text-3xl">Discover World</h2>
+<div class="flex flex-row gap-10 text-xs text-gray-400">
+<p>Recommended</p>
+<p>Popular Places</p>
+<p>Trip’s</p>
+</div>
+
+<div class=" flex flex-row gap-8">
+    <div class="flex flex-col gap-3 relative">
+    <img class="w-4 absolute z-50 left-[70%] top-[20px] bg-white opacity-50 w-[26px] h-[26px] rounded-full" src="./assets/icons/heart.svg" alt="">
+
+        <img class="w-[600px] h-[200px]" src="./assets/pics/moonlight.png" alt="">
+        <p>Moonlight Night</p>
+        <div class="flex flex-row gap-3">
+        <img class="w-[19px]" src="./assets/icons/location.svg" alt="">
+        <p class="text-xs">Canada</p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <g filter="url(#filter0_d_3_66)">
+              <path d="M19.3895 6.14875L20.7995 8.96875C20.9895 9.35875 21.4995 9.72875 21.9295 9.80875L24.4795 10.2288C26.1095 10.4988 26.4895 11.6788 25.3195 12.8588L23.3295 14.8488C22.9995 15.1788 22.8095 15.8288 22.9195 16.2988L23.4895 18.7588C23.9395 20.6988 22.8995 21.4588 21.1895 20.4388L18.7995 19.0188C18.3695 18.7588 17.6495 18.7588 17.2195 19.0188L14.8295 20.4388C13.1195 21.4488 12.0795 20.6988 12.5295 18.7588L13.0995 16.2988C13.1895 15.8188 12.9995 15.1688 12.6695 14.8388L10.6795 12.8488C9.50945 11.6788 9.88945 10.4988 11.5195 10.2188L14.0695 9.79875C14.4995 9.72875 15.0095 9.34875 15.1995 8.95875L16.6095 6.13875C17.3795 4.61875 18.6195 4.61875 19.3895 6.14875Z" fill="#FFC85E"/>
+            </g>
+            <defs>
+              <filter id="filter0_d_3_66" x="0" y="0" width="35.999" height="35.8924" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="5"/>
+                <feGaussianBlur stdDeviation="5"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0.996078 0 0 0 0 0.776471 0 0 0 0 0.360784 0 0 0 0.4 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3_66"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3_66" result="shape"/>
+              </filter>
+            </defs>
+          </svg>
+          <p>4.7</p>
+        </div>
+        </div>
+
+        <div class="flex flex-col gap-3 relative">
+            <img class="w-4 absolute z-50 left-[70%] top-[20px] bg-white opacity-50 w-[26px] h-[26px] rounded-full" src="./assets/icons/heart.svg" alt="">
+        
+                <img class="w-[600px] h-[200px]" src="./assets/pics/orange-mountain.png" alt="">
+                <p>Sahara Desert</p>
+                <div class="flex flex-row gap-3">
+                <img class="w-[19px]" src="./assets/icons/location.svg" alt="">
+                <p class="text-xs">Africa</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                    <g filter="url(#filter0_d_3_66)">
+                      <path d="M19.3895 6.14875L20.7995 8.96875C20.9895 9.35875 21.4995 9.72875 21.9295 9.80875L24.4795 10.2288C26.1095 10.4988 26.4895 11.6788 25.3195 12.8588L23.3295 14.8488C22.9995 15.1788 22.8095 15.8288 22.9195 16.2988L23.4895 18.7588C23.9395 20.6988 22.8995 21.4588 21.1895 20.4388L18.7995 19.0188C18.3695 18.7588 17.6495 18.7588 17.2195 19.0188L14.8295 20.4388C13.1195 21.4488 12.0795 20.6988 12.5295 18.7588L13.0995 16.2988C13.1895 15.8188 12.9995 15.1688 12.6695 14.8388L10.6795 12.8488C9.50945 11.6788 9.88945 10.4988 11.5195 10.2188L14.0695 9.79875C14.4995 9.72875 15.0095 9.34875 15.1995 8.95875L16.6095 6.13875C17.3795 4.61875 18.6195 4.61875 19.3895 6.14875Z" fill="#FFC85E"/>
+                    </g>
+                    <defs>
+                      <filter id="filter0_d_3_66" x="0" y="0" width="35.999" height="35.8924" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="5"/>
+                        <feGaussianBlur stdDeviation="5"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0.996078 0 0 0 0 0.776471 0 0 0 0 0.360784 0 0 0 0.4 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3_66"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3_66" result="shape"/>
+                      </filter>
+                    </defs>
+                  </svg>
+                  <p>4.9</p>
+                </div>
+                </div>
+
+                <div class="flex flex-col gap-3 relative ">
+                    <img class="w-4 absolute z-50 left-[70%] top-[20px] bg-white opacity-50 w-[26px] h-[26px] rounded-full" src="./assets/icons/heart.svg" alt="">
+                
+                        <img class="w-[600px] h-[200px]" src="./assets/pics/night-moon.png" alt="">
+                        <p>Night Camping</p>
+                        <div class="flex flex-row gap-3">
+                        <img class="w-[19px]" src="./assets/icons/location.svg" alt="">
+                        <p class="text-xs whitespace-nowrap">New York</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                            <g filter="url(#filter0_d_3_66)">
+                              <path d="M19.3895 6.14875L20.7995 8.96875C20.9895 9.35875 21.4995 9.72875 21.9295 9.80875L24.4795 10.2288C26.1095 10.4988 26.4895 11.6788 25.3195 12.8588L23.3295 14.8488C22.9995 15.1788 22.8095 15.8288 22.9195 16.2988L23.4895 18.7588C23.9395 20.6988 22.8995 21.4588 21.1895 20.4388L18.7995 19.0188C18.3695 18.7588 17.6495 18.7588 17.2195 19.0188L14.8295 20.4388C13.1195 21.4488 12.0795 20.6988 12.5295 18.7588L13.0995 16.2988C13.1895 15.8188 12.9995 15.1688 12.6695 14.8388L10.6795 12.8488C9.50945 11.6788 9.88945 10.4988 11.5195 10.2188L14.0695 9.79875C14.4995 9.72875 15.0095 9.34875 15.1995 8.95875L16.6095 6.13875C17.3795 4.61875 18.6195 4.61875 19.3895 6.14875Z" fill="#FFC85E"/>
+                            </g>
+                            <defs>
+                              <filter id="filter0_d_3_66" x="0" y="0" width="35.999" height="35.8924" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                <feOffset dy="5"/>
+                                <feGaussianBlur stdDeviation="5"/>
+                                <feComposite in2="hardAlpha" operator="out"/>
+                                <feColorMatrix type="matrix" values="0 0 0 0 0.996078 0 0 0 0 0.776471 0 0 0 0 0.360784 0 0 0 0.4 0"/>
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3_66"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3_66" result="shape"/>
+                              </filter>
+                            </defs>
+                          </svg>
+                          <p>5.0</p>
+                        </div>
+                        </div>
+</div>
+<div class="flex flex-row justify-between">
+<h2 class="text-3xl whitespace-nowrap">Event Dates</h2>
+<p class="text-sm whitespace-nowrap" style="border-radius: 24px;
+border: 1px solid #B4BCC4;">January 15-2022</p>
+</div>
+
+<div class="grid grid-cols-9 gap-14">
+<div><p style="color: #18333E;
+    font-family: Baloo 2;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;">Mo</p> <br> <p style="color: #18333E;
+font-family: Baloo 2;
+font-size: 25px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;">12</p></div>
+<div style="border-radius: 32px;
+border: 22px solid #18333E;">
+<p style="color: #FFF;
+font-family: Baloo 2;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;">Tu</p> <br> <p style="color: #FFF;
+font-family: Baloo 2;
+font-size: 25px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;">13</p></div>
+<div><p style="color: #18333E;
+    font-family: Baloo 2;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;">We</p> <br> <p style="color: #18333E;
+font-family: Baloo 2;
+font-size: 25px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;">14</p></div>
+<div><p style="color: #18333E;
+    font-family: Baloo 2;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;">Th</p> <br> <p style="color: #18333E;
+font-family: Baloo 2;
+font-size: 25px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;">15</p></div>
+<div><p style="color: #18333E;
+    font-family: Baloo 2;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;">Fr</p> <br> <p style="color: #18333E;
+font-family: Baloo 2;
+font-size: 25px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;">16</p></div>
+<div><p style="color: #18333E;
+    font-family: Baloo 2;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;">St</p> <br> <p style="color: #18333E;
+font-family: Baloo 2;
+font-size: 25px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;">17</p></div>
+<div><p style="color: #18333E;
+    font-family: Baloo 2;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;">Su</p> <br> <p style="color: #18333E;
+font-family: Baloo 2;
+font-size: 25px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;">18</p></div>
+<div><p style="color: #18333E;
+    font-family: Baloo 2;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;">Mo</p> <br> <p style="color: #18333E;
+font-family: Baloo 2;
+font-size: 25px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;">19</p></div>
+<div><p style="color: #18333E;
+    font-family: Baloo 2;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;">Tu</p> <br> <p style="color: #18333E;
+font-family: Baloo 2;
+font-size: 25px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;">20</p></div>
+
+</div>
+
+<div class="flex flex-row gap-8">
+    <div class="flex flex-row gap-3 w-[457px] h-24 " style="border-radius: 25px;
+    border: 35px solid #18333E;">
+        <img class="w-[113px] h-14 bg-[#18333E]" src="./assets/pics/image 2.png" alt="">
+        <div class="flex flex-col" style="background-color: #18333E;"><p class="whitespace-nowrap" style="color: #FFF;
+            font-family: Baloo 2;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal; background-color: #18333E;">Netherlands Travel Tour </p>
+    <div class="flex flex-row"> 
+<img class="w-3" src="./assets/icons/Vector.svg" alt=""><p style="color: #FFF;
+font-family: Baloo 2;
+font-size: 10px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;">4.7</p> </div>  
+</div>
+<img class="w-12" src="./assets/icons/Group 41.svg" alt="">
+    </div>
+    <div class="flex flex-row gap-10">
+<img class="w-44 h-24" src="./assets/pics/spooky-night-forest-background-with-full-moon_1308-78373.png" alt="">
+<img class="w-44 h-24" src="./assets/pics/flat-adventure-background-with-mountains_23-2149045825 1.png" alt="">
+</div>
+
+</div>
+</div>
+
+<div class="col-span-1 flex flex-col gap-10">
+    <div class="flex flex-row justify-center gap-6">
+        <img src="./assets/icons/Line 1.svg" alt="">
+<img src="./assets/icons/location.svg" alt="">
+<p style="color: #18333E;
+font-family: Baloo 2;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;">New York/ Dc</p>
+<img src="./assets/icons/notification-bing.svg" alt="">
+<img src="./assets/pics/avatar.svg" alt="">
+    </div>
+
+    <div class="w-[350px] h-[290px] bg-cover p-5 grid grid-rows-6">
+        <div><img class="rounded-3xl" src="./assets/pics/mountains-landscape-sundown_52683-24164 1.jpg" alt=""></div>
+<div class="bg-white opacity-50 w-[46px] h-[46px] rounded-full flex justify-center items-center ml-60 mt-0">
+<img class="w-26 h-26" src="./assets/icons/redheart.svg" alt="">
+</div>
+<div
+class="w-full backdrop-blur-md flex justify-between p-4 rounded-2xl justify-self-end row-start-5 row-end-7">
+<img src="./assets/pics/Rectangle 22.png" alt="" class="w-16">
+<img src="./assets/pics/Rectangle 23.png" alt="" class="w-16">
+<img src="./assets/pics/Rectangle 24.png" alt="" class="w-16">
+<img src="./assets/pics/Rectangle 25.png" alt="" class="w-16">
+</div>
+    </div>
+
+    <div class="flex flex-col">
+        <div class="flex flex-row justify-between">
+            <p style="color: #18333E;
+            font-family: Baloo 2;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;">Brazil Forest</p>
+            <img src="./assets/icons/book-saved.svg" alt="">
+        </div>
+        <p>I spend ten minutes or so doing a couple of Duolingo
+            lessons in French so </p>
+    </div>
+<div class="flex flex-row gap-10">
+    <div class="flex flex-col">
+        <p style="color: #18333E;
+        font-family: Baloo 2;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;">per/person</p>
+        <p style="color: #18333E;
+        font-family: Baloo 2;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;">$1540</p>
+    </div>
+<div class="rounded-3xl bg-[#18333E] w-full h-16 shrink-1 justify-self-end row-start-5 row-end-7">
+    <p class="whitespace-nowrap" style="color: #FFF;
+    font-family: Baloo 2;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;">Book Travel</p>
+</div>
+</div>
+
+<div class="flex flex-col gap-10">
+<div class="flex flex-row gap-3">
+    <img src="./assets/pics/nature lake.png" alt="">
+<div class="flex flex-col gap-3">
+<p class="whitespace-nowrap" style="color: #18333E;
+font-family: Baloo 2;
+font-size: 22px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;">Nature Lake</p>
+<div class="flex flex-row">
+<img src="./assets/icons/location.svg" alt="">
+<p class="opacity-[0.7]" style="color: #18333E;
+font-family: Baloo 2;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;">	Afghanistan</p>
+</div>
+</div>
+<img class="bg-[#E9F1FA] w-6 h-6  rounded-full flex justify-center items-center ml-10" src="./assets/icons/heart.svg" alt="">
+</div>
+
+<div class="flex flex-row gap-3">
+    <img src="./assets/pics/camel ride.png" alt="">
+<div class="flex flex-col gap-3">
+<p class="whitespace-nowrap" style="color: #18333E;
+font-family: Baloo 2;
+font-size: 22px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;">Camel Ride</p>
+<div class="flex flex-row">
+<img src="./assets/icons/location.svg" alt="">
+<p class="opacity-[0.7]" style="color: #18333E;
+font-family: Baloo 2;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;">	Srilanka</p>
+</div>
+</div>
+<img class="bg-[#E9F1FA] w-6 h-6  rounded-full flex justify-center items-center ml-10" src="./assets/icons/heart.svg" alt="">
+</div>
+
+<div class="flex flex-row gap-3">
+    <img src="./assets/pics/mid forest.png" alt="">
+<div class="flex flex-col gap-3">
+<p class="whitespace-nowrap" style="color: #18333E;
+font-family: Baloo 2;
+font-size: 22px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;">Mid Forest</p>
+<div class="flex flex-row">
+<img src="./assets/icons/location.svg" alt="">
+<p class="opacity-[0.7]" style="color: #18333E;
+font-family: Baloo 2;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;">Brazil</p>
+</div>
+</div>
+<img class="bg-[#E9F1FA] w-6 h-6  rounded-full flex justify-center items-center ml-10" src="./assets/icons/heart.svg" alt="">
+</div>
+</div>
+</div>
+
+</div>
+
+</body>
+
+</html>
